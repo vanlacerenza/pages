@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste van e grando</title>
+    <style>
+        body {
+            background-color: rgb(93, 190, 214);
+            font-family: Courier New, monospace;
+            color: rgb(13, 78, 175);
+    }
+
+        h1{
+            text-align: center;
+            font-family: monospace;
+            color: rgb(29, 28, 124);
+    }   
+
+        form {
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 50px;
+    }   
+    
+        div{
+            width: 100%; 
+            display: block;
+            padding: 10px 20px;
+    }
+
+        input[type="texto"], select, input[type="number"] {
+            border-radius: 2px;
+            border: 1px solid #ccc;
+
+    }
+
+        textarea {
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            padding: 5px;
+    }
+
+    /* BUTTON */
+        .btn {
+        border: 1px solid #ccc;
+        padding: 10px 30px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: all .5s;
+        margin-left: 15px;
+    }
+
+    .btn_grey {
+        background-color: #ccc;
+        color: #4a4a4a;
+    }
+
+    .btn_purple {
+        background-color: #9013FE;
+        color: white;
+    }
+
+    .btn_grey:hover {
+        background-color: #999;
+        color: white;
+    }
+
+    .btn_purple:hover {
+        background-color: #3a006d;
+    }
+
+    .checar{
+        border: 2px gainsboro;
+        border-radius:5px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <form>
+    <h1>Formulario - Inscrição</h1>
+    
+    <div>
+        <label for="texto">Nome</label>
+            <input type="texto" name="nome" placeholder="Insira seu Nome" id="usuario" required="required">
+    </div>
+    
+    <div>
+        <label for="texto">E-mail</label>
+            <input type="email" name="email" placeholder="Insira seu e-mail" required="required"> <br>
+    <!-- <small id="emailHelp" class="form-email">Não se preocupe! Seu e-mail está seguro.</small> -->
+    </div>
+    
+    <div>
+    <label for="texto">Você deseja estudar em que modelo?>
+        <div class="half-col">
+            <input type="checkbox" name="encontros" value="Online"> Online <br>
+            <input type="checkbox" name="encontros" value="Presencial"> Presencial <br>
+            <input type="checkbox" name="encontros" value="Outro"> Online e Presencial<br>
+    </div>   
+        <label for="texto"> Tem alguma dúvida?</label>
+            <select name="dropdown">
+            <option value="contato">Sim, como sei que deu certo meu cadastro?</option>
+            <option value="contato">Quando começam as aulas?</option>
+            <option value="contato">Não, obrigada.</option>
+        </select>
+    </div>
+    
+    <div>
+    
+    <div>
+        <label for="texto">Você é de qual cidade/estado?</label>
+            <select nome="extras">
+                <optgroup label="São Paulo">
+                    <option value="cidadesp"> São Paulo</option>
+                    <option value="interiorsp">Interior de São Paulo</option>
+                    <option value="gradessp">Região metropolitana de São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Outros Estados">
+                    <option value="ceara">Ceará</option>
+                    <option value="outros">Outros</option>
+                </optgroup>
+            </select>
+    </div>
+    
+    <div>
+        <label for="texto">Comentários? São bem-vindos!</label>
+            <textarea name="texto"></textarea>
+            <!--informações textuais maiores, incluindo quebras de linhas-->
+    </div>
+    
+    <div class="enviar">
+        <button class="btn btn_grey">Limpar</button>
+            <input class="btn btn_purple" type="submit" id="enviar" value="Enviar">
+    </div>
+    
+    </form>
+    
+</body>
+</html>
